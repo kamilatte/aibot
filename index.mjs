@@ -117,7 +117,7 @@ async function getOllamaResponses(query) {
 
                 // Check if response has 'response' field
                 if (jsonData.response !== undefined) {
-                    responseData += jsonData.response + ' ';
+                    responseData += jsonData.response + '';
                     tokenCount++; // Count as a token
                     console.log(`Token count updated: ${tokenCount}`);
                 }
