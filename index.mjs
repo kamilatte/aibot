@@ -5,7 +5,7 @@ import { config as dotenvConfig } from 'dotenv';
 dotenvConfig();
 
 const TOKEN = process.env.DISCORD_BOT_TOKEN;
-const OLLAMA_ENDPOINT = 'http://localhost:11434/api/generate/';
+const OLLAMA_ENDPOINT = process.env.ENDPOINT_URL;
 
 const headers = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:128.0) Gecko/20100101 Firefox/128.0',
